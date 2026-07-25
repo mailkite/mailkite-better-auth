@@ -1,0 +1,54 @@
+{
+  "name": "@mailkite/better-auth",
+  "version": "0.1.0",
+  "description": "Send Better Auth's magic links, OTPs, verification, password-reset and organization-invite emails through MailKite.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./templates": {
+      "import": "./templates.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "templates.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "better-auth": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "better-auth": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "better-auth",
+    "better-auth-plugin",
+    "mailkite",
+    "email",
+    "magic-link",
+    "otp",
+    "transactional",
+    "nextjs",
+    "auth"
+  ],
+  "homepage": "https://mailkite.dev/docs/auth/better-auth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailkite/mailkite-better-auth.git"
+  },
+  "license": "MIT"
+}
